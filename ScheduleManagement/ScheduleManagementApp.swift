@@ -12,6 +12,7 @@ struct ScheduleManagementApp: App {
     var body: some Scene {
         WindowGroup {
          SelectView()
+                .environmentObject(Migration())
         }
     }
 }
