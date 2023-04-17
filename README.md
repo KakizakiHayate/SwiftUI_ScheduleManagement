@@ -1,12 +1,12 @@
 # SwiftUI_ScheduleManagement
 
-##　タイトル
+## タイトル
 時間割管理アプリ
 　
-##　アプリケーション概要
+## アプリケーション概要
 時間割と一緒に自分が乗る電車の時間も確認することができ、「何時の電車に乗って何の時間割」が、わかるようになっています。
 
-##　GIF
+## GIF
 　
 ![ezgif com-optimize](https://user-images.githubusercontent.com/109132975/232325969-55a950ff-924a-4370-8990-8e5a80b7ed29.gif)
 
