@@ -1,6 +1,6 @@
 # SwiftUI_ScheduleManagement
 
-#　タイトル
+##　タイトル
 時間割管理アプリ
 　
 ##　アプリケーション概要
@@ -16,7 +16,7 @@
 + DatePickerで電車の時刻を変更可能
 
 ## ライブラリ
-+Realm Database(データベース)
++ Realm Database(データベース)
 
 ## 開発
 
