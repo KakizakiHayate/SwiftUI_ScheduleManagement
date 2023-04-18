@@ -18,26 +18,27 @@ struct SelectView: View {
                 
                 VStack{
                     HStack {
+                        
                         VStack {
                             NavigationLink {
-                                MondayView(mondayModel: MonDayModel(), migration: Migration())
+                                SaturdayView(saturDayModel: SaturDayModel(), migration: Migration())
                                     .environmentObject(Migration())
                                 
                             } label: {
-                                Text("月")
+                                Text("土")
                                     .font(.title)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.white)
                                     .frame(width: 65, height: 65)
-                                    .background(Color.white)
+                                    .background(Color.customColorPurple)
                                     .cornerRadius(40)
                             }.padding(.bottom)
                             
                             NavigationLink {
-                                TuesdayView(tuesDayModel: TuesDayModel(), migration: Migration())
+                                SundayView(sunDayModel: SunDayModel(), migration: Migration())
                                     .environmentObject(Migration())
                                 
                             } label: {
-                                Text("火")
+                                Text("日")
                                     .font(.title)
                                     .foregroundColor(.white)
                                     .frame(width: 65, height: 65)
@@ -45,7 +46,6 @@ struct SelectView: View {
                                     .cornerRadius(40)
                             }.padding(.top)
                         }.padding(.trailing)
-                        
                         
                         VStack {
                             NavigationLink {
@@ -90,11 +90,11 @@ struct SelectView: View {
                         
                         VStack {
                             NavigationLink {
-                                SaturdayView(saturDayModel: SaturDayModel(), migration: Migration())
+                                MondayView(mondayModel: MonDayModel(), migration: Migration())
                                     .environmentObject(Migration())
                                 
                             } label: {
-                                Text("土")
+                                Text("月")
                                     .font(.title)
                                     .foregroundColor(.white)
                                     .frame(width: 65, height: 65)
@@ -103,11 +103,11 @@ struct SelectView: View {
                             }.padding(.bottom)
                             
                             NavigationLink {
-                                SundayView(sunDayModel: SunDayModel(), migration: Migration())
+                                TuesdayView(tuesDayModel: TuesDayModel(), migration: Migration())
                                     .environmentObject(Migration())
                                 
                             } label: {
-                                Text("日")
+                                Text("火")
                                     .font(.title)
                                     .foregroundColor(.white)
                                     .frame(width: 65, height: 65)
@@ -115,7 +115,6 @@ struct SelectView: View {
                                     .cornerRadius(40)
                             }.padding(.top)
                         }.padding(.leading)
-                        
                        
                     }
                 }
